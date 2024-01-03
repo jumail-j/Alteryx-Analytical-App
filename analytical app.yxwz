@@ -1,0 +1,719 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Airlines-Data.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="Available Seat Miles Domestic (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Available Seat Miles International (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of Domestic Flights" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of International Flights" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of Domestic Passengers" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of International Passengers" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Revenue Passenger Miles, Domestic (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Revenue Passenger Miles, International (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Origin Airport Code" size="255" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Origin Airport Name" size="255" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Origin Airport Code] = "CLT"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Origin Airport Code] = "CLT"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="Available Seat Miles Domestic (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Available Seat Miles International (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of Domestic Flights" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of International Flights" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of Domestic Passengers" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of International Passengers" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Revenue Passenger Miles, Domestic (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Revenue Passenger Miles, International (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Origin Airport Code" size="255" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Origin Airport Name" size="255" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="Available Seat Miles Domestic (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Available Seat Miles International (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of Domestic Flights" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of International Flights" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of Domestic Passengers" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of International Passengers" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Revenue Passenger Miles, Domestic (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Revenue Passenger Miles, International (in thousands)" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Origin Airport Code" size="255" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Origin Airport Name" size="255" source="File: C:\Users\muhammad sinan rpk\Desktop\alteryx\02_alteryx workflow\New folder (2)\Airlines-Data.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Date" action="GroupBy" rename="Date" />
+            <SummarizeField field="Number of Domestic Flights" action="Sum" rename="Sum_Number of Domestic Flights" />
+            <SummarizeField field="Number of Domestic Passengers" action="Sum" rename="Sum_Number of Domestic Passengers" />
+            <SummarizeField field="Revenue Passenger Miles, Domestic (in thousands)" action="Sum" rename="Sum_Revenue Passenger Miles, Domestic (in thousands)" />
+            <SummarizeField field="Number of International Flights" action="Sum" rename="Sum_Number of International Flights" />
+            <SummarizeField field="Number of International Passengers" action="Sum" rename="Sum_Number of International Passengers" />
+            <SummarizeField field="Revenue Passenger Miles, International (in thousands)" action="Sum" rename="Sum_Revenue Passenger Miles, International (in thousands)" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="Summarize: GroupBy - Date" type="Date" />
+            <Field name="Sum_Number of Domestic Flights" source="Summarize: Sum - Number of Domestic Flights" type="Double" />
+            <Field name="Sum_Number of Domestic Passengers" source="Summarize: Sum - Number of Domestic Passengers" type="Double" />
+            <Field name="Sum_Revenue Passenger Miles, Domestic (in thousands)" source="Summarize: Sum - Revenue Passenger Miles, Domestic (in thousands)" type="Double" />
+            <Field name="Sum_Number of International Flights" source="Summarize: Sum - Number of International Flights" type="Double" />
+            <Field name="Sum_Number of International Passengers" source="Summarize: Sum - Number of International Passengers" type="Double" />
+            <Field name="Sum_Revenue Passenger Miles, International (in thousands)" source="Summarize: Sum - Revenue Passenger Miles, International (in thousands)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="474" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Sum_Number of International Passengers" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sum_Number of International Passengers - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="Summarize: GroupBy - Date" type="Date" />
+            <Field name="Sum_Number of Domestic Flights" source="Summarize: Sum - Number of Domestic Flights" type="Double" />
+            <Field name="Sum_Number of Domestic Passengers" source="Summarize: Sum - Number of Domestic Passengers" type="Double" />
+            <Field name="Sum_Revenue Passenger Miles, Domestic (in thousands)" source="Summarize: Sum - Revenue Passenger Miles, Domestic (in thousands)" type="Double" />
+            <Field name="Sum_Number of International Flights" source="Summarize: Sum - Number of International Flights" type="Double" />
+            <Field name="Sum_Number of International Passengers" source="Summarize: Sum - Number of International Passengers" type="Double" />
+            <Field name="Sum_Revenue Passenger Miles, International (in thousands)" source="Summarize: Sum - Revenue Passenger Miles, International (in thousands)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="666" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>5</N>
+          <GroupFields orderChanged="False">
+            <Field name="Date" />
+            <Field name="Sum_Number of Domestic Flights" />
+            <Field name="Sum_Number of International Flights" />
+            <Field name="Sum_Number of International Passengers" />
+            <Field name="Sum_Number of Domestic Passengers" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 5 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="Summarize: GroupBy - Date" type="Date" />
+            <Field name="Sum_Number of Domestic Flights" source="Summarize: Sum - Number of Domestic Flights" type="Double" />
+            <Field name="Sum_Number of Domestic Passengers" source="Summarize: Sum - Number of Domestic Passengers" type="Double" />
+            <Field name="Sum_Revenue Passenger Miles, Domestic (in thousands)" source="Summarize: Sum - Revenue Passenger Miles, Domestic (in thousands)" type="Double" />
+            <Field name="Sum_Number of International Flights" source="Summarize: Sum - Number of International Flights" type="Double" />
+            <Field name="Sum_Number of International Passengers" source="Summarize: Sum - Number of International Passengers" type="Double" />
+            <Field name="Sum_Revenue Passenger Miles, International (in thousands)" source="Summarize: Sum - Revenue Passenger Miles, International (in thousands)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FileBrowse.FileBrowse">
+        <Position x="54" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>File Browse (8)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="54" y="144" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="246" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Drop Down (10)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="246" y="132" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="426" y="102" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Drop Down (14)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="492" y="126" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="654" y="66" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Text Box (20)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="660" y="132" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="810" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\muhammad sinan rpk\Desktop\alteryx\03_Output\app_out.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>app_out.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FileBrowse.FileBrowse">
+        <Position x="810" y="66" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>File Browse (23)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="810" y="126" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Action" />
+      <Destination ToolID="3" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="17" Connection="Action" />
+      <Destination ToolID="5" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="14" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Action" />
+      <Destination ToolID="6" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="24" Connection="Action" />
+      <Destination ToolID="22" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Question" />
+      <Destination ToolID="9" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="11" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="14" Connection="Question" />
+      <Destination ToolID="17" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Question" />
+      <Destination ToolID="21" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="23" Connection="Question" />
+      <Destination ToolID="24" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>File Browse (8)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (10)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (20)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>File Browse (23)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>analytical app</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ff1febdc-aa88-4e68-8c88-ee048405a2c4" />
+      <Telemetry>
+        <PreviousWorkflowId value="27d6492e-5be5-41fe-8b06-9da9ff528641" />
+        <OriginWorkflowId value="27d6492e-5be5-41fe-8b06-9da9ff528641" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateInput</Type>
+              <Description />
+              <ToolId value="9" />
+              <Variable />
+              <InputTool value="-1" />
+              <Required value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="11" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>CLT</ReplaceText>
+              <Destination>3/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="17" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>5/SortInfo</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="21" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>5</ReplaceText>
+              <Destination>6/N</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="24" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>C:\Users\muhammad sinan rpk\Desktop\alteryx\03_Output\app_out.xlsx</ReplaceText>
+              <Destination>22/File</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>input</Description>
+          <Name>Tab (7)</Name>
+          <ToolId value="7" />
+          <Questions>
+            <Question>
+              <Type>FileBrowse</Type>
+              <Description>select file</Description>
+              <Name>File Browse (8)</Name>
+              <ToolId value="8" />
+              <SaveAs value="False" />
+              <Mode>DW2</Mode>
+              <DW2_SpatialOnly value="False" />
+              <DW2_FieldMap value="False" />
+              <InputToolId value="-1" />
+            </Question>
+          </Questions>
+        </Question>
+        <Question>
+          <Type>Tab</Type>
+          <Description>analysis</Description>
+          <Name>Tab (25)</Name>
+          <ToolId value="25" />
+          <Questions>
+            <Question>
+              <Type>ListBox</Type>
+              <Description><![CDATA[select airport name ]]></Description>
+              <Name>Drop Down (10)</Name>
+              <ToolId value="10" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[Philadelphia5419541n5148905f1n0941f5809PHL
+LaGuardia New York5419541n5148905f1n0941f5809LGA
+San Diego5419541n5148905f1n0941f5809SAN
+Phoenix Sky Harbor5419541n5148905f1n0941f5809PHX
+Washington Dulles5419541n5148905f1n0941f5809IAD
+Denver5419541n5148905f1n0941f5809DEN
+Tampa5419541n5148905f1n0941f5809TPA
+Los Angeles5419541n5148905f1n0941f5809LAX
+Dallas/Fort-Worth5419541n5148905f1n0941f5809DFW
+Ronald Reagan Washington5419541n5148905f1n0941f5809DCA
+Hartsfield-Jackson Atlanta5419541n5148905f1n0941f5809ATL
+Miami5419541n5148905f1n0941f5809MIA
+Chicago O'Hare5419541n5148905f1n0941f5809ORD
+Portland5419541n5148905f1n0941f5809PDX
+Boston Logan5419541n5148905f1n0941f5809BOS	
+San Francisco5419541n5148905f1n0941f5809SFO
+Charlotte Douglas5419541n5148905f1n0941f5809CLT
+Orlando5419541n5148905f1n0941f5809MCO
+Baltimore-Washington5419541n5148905f1n0941f5809BWI
+George Bush Houston5419541n5148905f1n0941f5809IAH
+Fort Lauderdale - Hollywood5419541n5148905f1n0941f5809FLL
+Newark Liberty5419541n5148905f1n0941f5809EWR
+John F. Kennedy New York5419541n5148905f1n0941f5809JFK
+Detroit Metropolitan5419541n5148905f1n0941f5809DTW
+Salt Lake City5419541n5148905f1n0941f5809SLC
+Minneapolis - Saint Paul5419541n5148905f1n0941f5809MSP
+McCarran Las Vegas5419541n5148905f1n0941f5809LAS
+Seattle - Tacoma5419541n5148905f1n0941f5809SEA
+]]></Manual_Values>
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>select field for analysis</Description>
+              <Name>Drop Down (14)</Name>
+              <ToolId value="14" />
+              <Multiple value="False" />
+              <Default>Number of Domestic Flights	:Sum_Number of Domestic Flights</Default>
+              <Mode>Field</Mode>
+              <Field_ToolId value="4" />
+              <Field_ConnectionName />
+              <Field_Connection>Output</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
+              <Field_FilterTypes>Int16,Int32,Int64,FixedDecimal,Float,Double,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>enter no of recods to display</Description>
+              <Name>Text Box (20)</Name>
+              <ToolId value="20" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+          </Questions>
+        </Question>
+        <Question>
+          <Type>Tab</Type>
+          <Description>output</Description>
+          <Name>Tab (26)</Name>
+          <ToolId value="26" />
+          <Questions>
+            <Question>
+              <Type>FileBrowse</Type>
+              <Description>output location</Description>
+              <Name>File Browse (23)</Name>
+              <ToolId value="23" />
+              <SaveAs value="True" />
+              <Mode>FileSpec</Mode>
+              <FileSpec>excel Files (*.*)|*.xlsx</FileSpec>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="22" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
